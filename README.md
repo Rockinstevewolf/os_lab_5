@@ -1,6 +1,6 @@
 # OS_lab_
-## Variant 0_: SmthSmthSmth.
-### (RUS) Здесь могла бы быть ваша реклама.
+## Variant 23: Dinamic libs.
+### (RUS) Динамические библиотеки.
 in bash:
 - "cmake cmakelists.txt"
 - "make"
