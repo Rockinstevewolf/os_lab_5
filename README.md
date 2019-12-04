@@ -1,4 +1,4 @@
-# OS_lab_
+# OS_lab_5
 ## Variant 23: Dinamic libs.
 ### (RUS) Динамические библиотеки.
 in bash:
