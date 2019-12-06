@@ -4,5 +4,6 @@
 in bash:
 - "cmake cmakelists.txt"
 - "make"
-- "./executable"
+- "./executable_stat" and "./executable_dyn"
+- also, you can see bash report about these two executables in "bash_report.txt"
 - enjoy
