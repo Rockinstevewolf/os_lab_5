@@ -1,0 +1,30 @@
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ make
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src
+[ 25%] Built target _header_dyn
+Scanning dependencies of target executable_dyn
+[ 37%] Linking C executable executable_dyn
+[ 50%] Built target executable_dyn
+[ 75%] Built target _header_stat
+[100%] Built target executable_stat
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ md5sum executable_stat executable_dyn
+fcd8913888593a466507df5ee217c3a3  executable_stat
+e56eba8fd6a5bd806b5e2b2d24ab6d47  executable_dyn
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ size executable_stat executable_dyn
+   text    data     bss     dec     hex filename
+   2784     632       8    3424     d60 executable_stat
+   2278     656       8    2942     b7e executable_dyn
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ ls -l executable_*
+-rwxrwxrwx 1 mamoon mamoon 8416 Dec  6 04:43 executable_dyn
+-rwxrwxrwx 1 mamoon mamoon 8696 Dec  6 04:40 executable_stat
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ ls -l lib_*
+-rwxrwxrwx 1 mamoon mamoon 8232 Dec  6 04:40 lib_header_dyn.so
+-rwxrwxrwx 1 mamoon mamoon 2938 Dec  6 04:40 lib_header_stat.a
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ ./executable_stat
+From top: D41D8CD98F00B204E9800998ECF8427E -> C93D3BF7A7C4AFE94B64E30C2CE39F4F -> 1BC29B36F623BA82AAF6724FD3B16718
+Stack is clear
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$ ./executable_dyn
+From top: D41D8CD98F00B204E9800998ECF8427E -> C93D3BF7A7C4AFE94B64E30C2CE39F4F -> 1BC29B36F623BA82AAF6724FD3B16718
+Stack is clear
+mamoon@DESKTOP-TTCP5UI:/mnt/c/Users/mi-pr/Desktop/GitReps/os_lab_5/src$

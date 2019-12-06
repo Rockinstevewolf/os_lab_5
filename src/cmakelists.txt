@@ -1,5 +1,10 @@
 cmake_minimum_required (VERSION 3.10.2)
 project (lab)
-add_executable(executable main.c)
-add_library(_header STATIC header.c)
-target_link_libraries(executable _header)
+
+add_executable(executable_stat main.c)
+add_library(_header_stat STATIC header.c)
+target_link_libraries(executable_stat _header_stat)
+
+add_executable(executable_dyn main.c)
+add_library(_header_dyn SHARED header.c)
+target_link_libraries(executable_dyn _header_dyn)

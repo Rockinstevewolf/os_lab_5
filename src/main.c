@@ -16,16 +16,12 @@ st* free_st(st *stack){
 int main()
 {
 	st *start = NULL;
-	//T data;
+
+	start = push(T_crt(0x1BC29B36F623BA82,0xAAF6724FD3B16718),start);
 	
-	T data = T_crt(0x1BC29B36F623BA82,0xAAF6724FD3B16718);
-	start = push(data,start);
-	
-	data = T_crt(0xC93D3BF7A7C4AFE9,0x4B64E30C2CE39F4F);
-	start = push(data,start);
-	
-	data = T_crt(0xD41D8CD98F00B204,0xE9800998ECF8427E);
-	start = push(data,start);
+	start = push(T_crt(0xC93D3BF7A7C4AFE9,0x4B64E30C2CE39F4F),start);
+
+	start = push(T_crt(0xD41D8CD98F00B204,0xE9800998ECF8427E),start);
 
 	print_stack(start);
 
