@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "header.h"
+#include "head.h"
 
 typedef struct T
 {
@@ -22,6 +22,10 @@ int main()
 	start = push(T_crt(0xC93D3BF7A7C4AFE9,0x4B64E30C2CE39F4F),start);
 
 	start = push(T_crt(0xD41D8CD98F00B204,0xE9800998ECF8427E),start);
+
+	print_stack(start);
+
+	start = pop(start);
 
 	print_stack(start);
 
