@@ -19,6 +19,3 @@ dynamic_lib:
 .PHONY: clean
 clean:
 	rm -f *.o executable executable_dyn
-
-% gcc -Wall -c NAME_HEADER.c -o lib_NAME_HEADER.so NAME_HEADER.o
-%
