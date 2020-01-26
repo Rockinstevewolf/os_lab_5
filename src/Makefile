@@ -18,4 +18,4 @@ dynamic_lib:
 
 .PHONY: clean
 clean:
-	rm -f *.o executable executable_dyn
+	rm -f *.o *.so executable executable_dyn
